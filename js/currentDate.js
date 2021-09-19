@@ -32,9 +32,7 @@ const monthNames = monthnames[todaysDate.getMonth()];
 const yearNames = todaysDate.getFullYear;
 const currentdate = dayNames + ', ' + todaysDate.getDate() + ' ' + monthNames + ', ' + todaysDate.getFullYear();
 
+const nLastModif = new Date(document.lastModified);
 
 
-
-
-
-document.getElementById('currentDate').textContent=currentdate;
+document.getElementById('currentDate').textContent = nLastModif;
