@@ -1,0 +1,37 @@
+body{
+    margin: 2%;
+}
+#box{
+    text-align: center;
+    color: antiquewhite;
+    border-radius: 24px;
+    background-color: brown;
+    padding: 3%;
+
+}
+header nav{
+    background-color: blue;
+    color: #fff;
+
+}
+header, footer{
+    text-align: center;
+    color: #fff;
+    background-color: brown;
+    padding: 5%;
+}
+header img {
+    width: 200px;
+    height: auto;
+}
+footer {
+    font-size: 0.8rem;
+}
+footer a{
+    color: #fff;
+}
+
+h1, h2, h3{
+    font-family: 'Yaldevi', sans-serif;
+
+}
