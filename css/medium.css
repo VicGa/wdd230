@@ -11,7 +11,7 @@
     }
     header img{
        
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 30px #444;
         float: right;
         border-radius: 0 10px 0 0;
     }
