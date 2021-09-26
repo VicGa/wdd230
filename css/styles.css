@@ -24,3 +24,7 @@ img {
     margin-top: 2%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
+h1, h2, h3{
+    font-family: 'Yaldevi', sans-serif;
+
+}
