@@ -6,4 +6,4 @@ let current_year = new Date().toLocaleDateString('en-US', options);
 let mod_date = document.lastModified;
 
 modified.innerHTML = `Last Modified: ${mod_date}`;
-copyright.innerHTML = cur_year;
+copyright.innerHTML = current_year;
