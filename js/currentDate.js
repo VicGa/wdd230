@@ -1,38 +1,9 @@
-//day names array 
-const daynames = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-];
+const options = {year: 'numeric'};
 
-// month names array
+let modified = document.querySelector('#currentDate');
 
-const monthnames = [
-    'january',
-    'february',
-    'march',
-    'april',
-    'may',
-    'june',
-    'july',
-    'august',
-    'september',
-    'october',
-    'november',
-    'december'
-];
+let current_year = new Date().toLocaleDateString('en-US', options);
+let mod_date = document.lastModified;
 
-const todaysDate = new Date();
-const dayNames = daynames[todaysDate.getDay()];
-const monthNames = monthnames[todaysDate.getMonth()];
-const yearNames = todaysDate.getFullYear;
-const currentdate = dayNames + ', ' + todaysDate.getDate() + ' ' + monthNames + ', ' + todaysDate.getFullYear();
-
-const nLastModif = new Date(document.lastModified);
-
-
-document.getElementById('currentDate').textContent = nLastModif;
+modified.innerHTML = `Last Modified: ${mod_date}`;
+copyright.innerHTML = cur_year;
