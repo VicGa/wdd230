@@ -10,7 +10,7 @@ header, footer {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    color: wheat;
+    color: rgb(250, 249, 246);
     background-color: tomato;
 }
 header nav{
