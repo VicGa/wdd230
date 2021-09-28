@@ -26,9 +26,12 @@ li::before{
 	margin-right:8px;
 
 }
-*{
+header ul a{
     list-style: none;
     color: rgb(248, 247, 248);
+}
+header ul{
+    list-style: none;
 }
 header h1 {
     font-size: 3.5rem;
