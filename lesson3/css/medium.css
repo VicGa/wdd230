@@ -1,0 +1,44 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    h1 { font-size: 1.5rem;}
+    
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+      nav ul { display: flex; }
+      nav ul li { flex: 1 1 100%; } 
+    
+  
+    /* Grid *********************/
+       
+       grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    } 
+  
+    
+  
+  /*******************************************************/
+    
+    nav a {
+      font-size: 1rem;
+    }
+    main {
+      grid-template-columns: 1fr ;
+    }
+    /*article:nth-child(3) {
+      grid-column: span 2;
+    }*/
+    main picture {
+      display: block;
+    }
+    /*main picture img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #bbb;
+    }*/
+    main h2 {
+      grid-column: span 3;
+    }
+    main picture img {
+      grid-column: span 3;
+    }
+   
+  
