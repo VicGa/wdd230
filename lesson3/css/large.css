@@ -5,12 +5,12 @@
     }
     
     main {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr ;
     }
-    main h2 {
+    /*main h2 {
       grid-column: span 3;
     }
     main picture img {
       grid-column: span 3;
-    }
+    }*/
   }
