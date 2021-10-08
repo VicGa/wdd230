@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/lesson3/css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -17,36 +18,98 @@
 </head>
 <body>
     <header>
-        <h1>What Wonderful Weather!!!</h1>
-        <h3>&#10048;Start Your Day</h3>
+        <h1>Weather Site Plan Document</h1>
+        <h2>Victor Daniel Gauna-WDD230</h2>
     </header>
     <nav>
         <ul>
           <li><a href="index.html" class="fas fa-home"> Home</a></li>
-          <li><a href="site-plan.html"  > Site Plan</a></li>
           <li><a href="#" id="active">Target Audience</a></li>
           <li><a href="typography.html"> Typography</a></li>
           <li><a href="color-scheme.html"> Color Scheme</a></li>
         </ul>
       </nav>
       <main>
-          <article>
+        <div>
             <h2>Target Audience</h2>
+            <p>This site is for anyone who wants to know the weather for daily life or trips.</p>
+            <hr>
+            <h2>Who?</h2>
             
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi nulla aut adipisci, laboriosam expedita placeat porro labore deserunt suscipit.</p>
+            <ul>
+                <li>
+                    <h3>Age Group</h3>
+                    <p>Ages 6+ will use the site</p>
+                </li>
+                <li> <h3>Income</h3>
+                    <p>All income ranges will use the site</p>
+                </li>
+                <li>
+                    <h3>Education</h3>
+                    <p>Anyone who understands the weather</p>
+                </li>
+            </ul>
+            
+            <hr>
+            <h2 style="text-decoration: underline">Persons</h2>
 
-        </article>
-        <article>
-            <h3>
-                People
-            </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi nulla aut adipisci, laboriosam expedita placeat porro labore deserunt suscipit.</p>
-
-        </article>
+        </div>      
+    
+    <div class="container">
+        <div id="column1">
+            <section>
+                <h4>Person 1:</h4>
+                <p>Fictionous name: Alexander Smith </p>
+                <br>
+                <picture>
+                    <img id ="persona1" src="/lesson3/images/runner.jpg" class="personimage" alt="People 1 Image">
+                </picture>
+                <p>-Hard worker, 30 years of age</p>
+                <p>-Loves run cars</p>
+                <p>-Empty nester</p>
+                <p>-Loves to  trip and take photos</p>
+            </section>
+        </div>
+        <div id="column2">
+            <section>
+                <h4>Person 2:</h4>
+                <p>Fictionous name: Jasson Jackson</p>
+                <br>
+                <picture>
+                    <img id ="persona2" src="/lesson3/images/OIP.jpg" class="personimage" alt="Persona 2 Image">
+                </picture>
+                <p>-25 years of age, Married</p>
+                <p>-1 children</p>
+                <p>-Works as a Mid-level mananger in IT</p>
+                <p>-Love excercises</p>
+        
+            </section>
+        </div>
+        
+    </div>
+   
+    
+    <hr>
+    <h2 style="text-decoration: underline" >Scenarios</h2>
+    <h2>Scenario #1</h2>
+    <p>Can the site be viewed on other viewports?</p>
+    <p>Yes the weather site will be viewable in desktop, tablet and mobile phone formats</p>
+    <h2>Scenario #2</h2>
+    <p>Are there image galleries available on the site?</p>
+    <p>There will be a galleries tab from the navigation bar to access weather related images and photos.</p>
+    <h2>Scenario #3</h2>
+    <p>Why chose Good Time Weather over other sites?</p>
+    <p>We will bring you the msot current weather, weather news for your town with accuracy.</p>
+    <h2>Scenario #4</h2>
+    <p>Need to find an article on the latest weather are going on in each town location?</p>
+    <p>Corresponding weather news stories and images for each town will be available.</p>
+    <h2>Scenario #5</h2>
+    <p>Love outdoor activities/sports?</p>
+    <p>Yes, there will be updates to the current weather every hour on the hour.</p>
           
       </main>
       <footer >
-        <p id="box-footer">&copy2021 | Victor Daniel Gauna | Argentina | BYUI Online Learning | Last Updated: <span id="currentDate"></span></p>
+        <p id="box-footer">&copy2021 | Victor Daniel Gauna | Argentina | <a href="https://www.byui.edu">BYUI Online Learning</a>  | Last Updated: <span id="currentDate"></span></p>
         <script src="js/currentDate.js"></script>
     </footer> 
 </body>

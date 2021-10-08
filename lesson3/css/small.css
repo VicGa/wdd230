@@ -1,7 +1,6 @@
 
 body {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
 }
 
 /* phone or baseline views **************************/
@@ -23,10 +22,20 @@ footer {
   margin: 0 auto;
 }
 h1 {
-  font-size: 1.1rem;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+
 }
-h2 {
+h2, h3, h4 {
   color: #536878;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+main p {
+  color:black;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
 }
 
 nav {
@@ -40,13 +49,13 @@ nav ul {
   padding: 0;
   overflow: hidden;
 }
-nav ul li a {
+nav ul li a, #fas {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 0.75rem;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: linear-gradient(90deg, transparent, rgb(235, 84, 159), transparent) top / var(--d, 0) 10px no-repeat;
   transition: 0.5s;
 }
@@ -55,6 +64,7 @@ background-color: #bbb;
   color: #021a08; 
   --d: 75%;
 }
+
 #active {
   color: rgb(226, 71, 92);
 }
@@ -65,7 +75,28 @@ main {
   margin: auto;
 }
 
+main section {
+	margin: 5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem 1rem;
+	background-color: #eee;
+    border-radius: 30px;
+    text-align: center;
 
+
+}
+
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+
+}
+.personimage {
+  max-width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 30px #333;
+  border-radius: 1rem;
+}
 
 footer {
   height: auto;

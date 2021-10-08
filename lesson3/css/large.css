@@ -4,13 +4,12 @@
       font-size: 1.1rem;
     }
     
-    main {
-      grid-template-columns: 1fr ;
+   main {
+      grid-template-columns: 1fr  ;
     }
-    /*main h2 {
-      grid-column: span 3;
+    
+    #column1, #column2 {
+      display:table-cell;
     }
-    main picture img {
-      grid-column: span 3;
-    }*/
+    
   }
