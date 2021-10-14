@@ -1,5 +1,6 @@
 @media only screen and (min-width: 60em) {
     h1 { font-size: 2rem;}
+    
     nav a {
       font-size: 1.1rem;
     }
@@ -8,8 +9,6 @@
       grid-template-columns: 1fr  ;
     }
     
-    #column1, #column2 {
-      display:table-cell;
-    }
+   
     
   }
