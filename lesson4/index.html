@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/lesson4/css/normalize.css">
-    <link rel="stylesheet" href="/lesson4/css/small.css">
-    <link rel="stylesheet" href="/lesson4/css/large.css">
+    <meta name="author" content="Victor D. Gauna">
+    <title>Preston Town Weather</title>
+    <link rel="stylesheet" href="/wdd230/lesson4/css/normalize.css">
+    <link rel="stylesheet" href="/wdd230/lesson4/css/small.css">
+    <link rel="stylesheet" href="/wdd230/lesson4/css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -17,16 +18,22 @@
 </head>
 <body>
     <header>
-        <img src="/lesson4/images/whatwonderfulweather.png" alt="logo-image">
-        <h1>What Wonderful Weather</h1>
-        <h2>Start your day!!</h2>
+        <picture>
+            <img src="/wdd230/lesson4/images/whatwonderfulweather.png" alt="logo-image">
+
+        </picture>
+        <section>
+            <h1 >What Wonderful Weather</h1>
+            <h2>Start Your Day!!</h2>
+
+        </section>
 
     </header>
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a class="active" href="/wdd230/lesson4/index.html">Preston</a></li>
             <li><a href="#">Soda Spring</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -35,14 +42,18 @@
 
     </nav>
     <main>
-
+        <h2 class= "section_head">Preston</h2>
+        <div class="contents">Hero w/ weather summary</div>
+        <div class="contents">5 day forecast</div>
+        <div class="contents">Articles</div>
+        <div class="contents">Contact Information</div>
     </main>
     <footer>
         <p id="box-footer">&copy2021 | Victor Daniel Gauna | Argentina | <a href="https://www.byui.edu">BYUI Online Learning</a>  | Last Updated: <span id="currentDate"></span></p>
-        <script src="js/currentDate.js"></script>
+        <script src="/wdd230/js/currentDate.js"></script>
 
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="/wdd230/lesson4/js/scripts.js"></script>
 
 </body>
 </html>
