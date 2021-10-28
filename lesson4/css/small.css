@@ -131,7 +131,7 @@ nav ul.hide{
 }
 .weathersumary{
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 50px;
     background: radial-gradient(#eee, #b5179e);
     border: 1px solid #000;
