@@ -118,8 +118,8 @@ nav ul.hide{
 .container{
     position: relative;
     border-color:black;
-    width: 1024px;
-    height: 300px;
+    width: 960px;
+    height: 250px;
 }
 .ImagePlaceholder{
     margin: 10px auto;
@@ -130,8 +130,8 @@ nav ul.hide{
 }
 .weathersumary{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
     background-color: radial-gradient(#b5179e, #eee);
     border: 1px solid #000;
     padding: 1.5rem;
