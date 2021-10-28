@@ -115,6 +115,19 @@ nav ul li a:hover{
 nav ul.hide{
     display: none;
 }
+.container{
+    position: relative;
+    width: 960px;
+}
+.ImagePlaceholder{
+    margin: 10px auto;
+    background-color: #eee;
+    border:1px solid #333;
+    height: 300px;
+}
+.weathersumary{
+    position: absolute;
+}
 
 /*-----------------Clearfix: force an element not to collapse-------*/
 .clearfix{
