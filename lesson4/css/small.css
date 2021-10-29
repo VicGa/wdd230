@@ -118,8 +118,8 @@ nav ul.hide{
 .container{
     position: relative;
     border-color:black;
-    width: 1024px;
-    height: 250px;
+    width: 800px;
+    height: 200px;
 }
 .ImagePlaceholder{
     margin: 10px auto;
