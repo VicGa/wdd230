@@ -71,8 +71,8 @@ header img {
     
 }
 .banner{
-    width: auto;
-    height: auto;
+    width: 960px;
+    height: 250px;
 }
 .weathersumary{
     position: absolute;
