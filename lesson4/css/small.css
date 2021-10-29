@@ -70,6 +70,10 @@ header img {
     border:1px solid #333;
     
 }
+.banner{
+    width: auto;
+    height: auto;
+}
 .weathersumary{
     position: absolute;
     top: 30px;
