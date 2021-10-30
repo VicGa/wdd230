@@ -6,10 +6,40 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 a{
     font-weight: bold;
 }
+#announce {
+    display: block;
+    background-color: #5cdb95;
+    color: #05386B;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: bold;
+  }
+main .article-div a:hover{
+    cursor: pointer;
+    color: brown;
+}
+.article-div {
+	display: block;
+	margin: auto 10%;
+	padding: 10px;
+    border: 1px solid #000;
+    color: #05386B;
+    background-color: beige;
+    border-radius: 1em;
+}
+
+main .article-div img {
+    float: right;
+    max-width: 25%;
+    max-height: 25%;
+    
+}
 body{
     margin: 0 auto;
 }
 header{
+    margin: 0 10%;
     text-align: center;
   background-color: #4895EF;
   align-items: center;
@@ -45,7 +75,8 @@ h2{font-size: 1.5em;
 
 }
 header img {
-    height: 80px;
+    margin: auto;
+    height: 150px;
     width: auto;
    
 }
@@ -53,30 +84,20 @@ header img {
     text-align: center;
     color: #4CC9F0;
   }
-  main{
-    margin: auto ;
-} 
+ 
 .container{
     position: relative;
-    border-color:black;
-    width: 960px;
-    height: 250px;
+    margin: auto;
+   
 }
-.ImagePlaceholder{
-    margin: 10px auto;
-    width: 100%;
-    height: 200px;
-    background-color: #eee;
-    border:1px solid #333;
-    
+.banner{
+    margin: auto 10%;
+    min-width: 63em;
+    height: 300px;
 }
 
-.banner{ 
-    margin: auto 5% auto 5%;
-    width: 500px;
-    height: 250px;}
 .weathersumary{
-    margin: auto 10% auto 10%;
+    margin: auto 10% ;
     position: absolute;
     top: 30px;
     left: 50px;
@@ -86,22 +107,34 @@ header img {
     box-shadow: 0 0 30px #333;
     opacity: .9;
 }
-.contents{
-    display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    display: block;
-    margin: 10px 15%;
-    border: 1px dashed black;
-    padding: 15px;
-    background-color: lightslategray;
-    color: white;
-}
 
+
+.forecast-div {
+    display:block;
+    text-align: center;
+    margin:3% auto;
+}
+.forecast-div h3 {
+    font-family:fantasy;
+    color: #F72585;
+}
+#weatherDay {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    color: #05386b;
+}
+#forecast-day {
+    background-color: rgb(10, 39, 68);
+    color: #eee;
+    font-family: sans-serif;
+}
+main{
+    margin: auto ;
+} 
  footer{
     height: auto;
-    border-radius: 15px;
-    margin: 0 5%;
+    margin: 0 10%;
  }
 nav button {
    /* margin: .2rem 10%;*/
@@ -112,25 +145,23 @@ nav button {
 }
 
 nav {
-    margin: 0 5%;
+    margin: 1em 10%;
     background-color: #b5179e;
     font-family: "Oswald", sans-serif;
-    border-radius: 15px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0 ;
-    margin: 0 ;
+    margin: 0 10%;
 }
 
 nav ul li a {
     display: block;
-    padding: 0.8rem 2%;
+    padding: 0.8rem 20% 0.8rem 20%;
     text-decoration: none;
     color:rgba(255,255,255,.8);
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -145,7 +176,29 @@ nav ul li a:hover{
 nav ul.hide{
     display: none;
 }
-
+.contact-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    margin: 15px 10% 15px 10%;
+    padding: 10px ;
+	border-radius: 1rem;
+    text-align: left;
+    color: #eee;
+    background-color: #b5179e;
+}
+#map {
+   max-width: 15em;
+   max-height: 25em;
+    margin: auto 5%;
+    float: left;
+  }
+.contact-us {
+    grid-column: 2;
+    margin: auto;
+  }
+.contact-us h4 {
+    text-align: center;
+}
 
 
 /*-----------------Clearfix: force an element not to collapse-------*/

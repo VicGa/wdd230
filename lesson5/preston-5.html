@@ -8,9 +8,9 @@
     <title>Preston Town Weather</title>
     <link rel="shortcut icon" href="/wdd230/lesson5/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="/wdd230/lesson5/css/normalize.css">
-    <link rel="stylesheet" href="/wdd230/lesson5/css/small.css">
-    <link rel="stylesheet" href="/wdd230/lesson5/css/large.css">
+    <link rel="stylesheet" href="/lesson5/css/normalize.css">
+    <link rel="stylesheet" href="/lesson5/css/small.css">
+    <link rel="stylesheet" href="/lesson5/css/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
-<body>
+<body onload="writedate()">
+    <div id="announce" style="display:block;"></div>
     <header>
         <picture>
-            <img src="/wdd230/lesson5/images/whatwonderfulweather.png" alt="logo-image">
+            <img src="/lesson5/images/whatwonderfulweather.png" alt="logo-image">
 
         </picture>
         <section>
@@ -35,7 +36,7 @@
         <button onclick="toggleMenu()">&#9776;Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a class="active" href="/wdd230/lesson5/preston-5.html">Preston</a></li>
+            <li><a class="active" href="/lesson5/preston-5.html">Preston</a></li>
             <li><a href="#">Soda Spring</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -46,19 +47,87 @@
     <main>
         <h2 class= "section_head">Preston Town </h2>
         <div class="container">
-            <img class="banner" src="/wdd230/lesson5/images/568499 (1).jpg" alt="banner-img">
+            <img class="banner" loading="lazy" src="/lesson5/images/preston-idaho-area-chamber-of-commerce.jpg" alt="banner-img">
             
             <section class="weathersumary">
                 <h3>Weather Summary</h3>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
+                <hr>
+                <p>Currently: Cloudy</p>
+                <p>High: 67 °F</p>
+                <p>Wind Chill: °F</p>
+                <p>Humidity: 42%</p>
+                <p>Wind Speed: 3 mph</p>
 
             </section>
         </div>
-        <div class="contents">5 day forecast</div>
-        <div class="contents">Articles</div>
-        <div class="contents">Contact Information</div>
+        <div class="forecast-div">
+            <h3>5 Day Forecast</h3>
+            <table id="weatherDay">
+                <thead>
+                    <tr id="forecast-day">
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img loading="lazy" width="50px" src="/lesson5/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-1">71 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="/lesson5/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-2">76 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="/lesson5/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-3">82 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="/lesson5/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-4">70 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="/lesson5/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-5">76 °F</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        
+        </div>
+        <div class="article-div">
+            <img src="/lesson5/images/gases-invernaderos.jpg" alt="" id="article-img">
+
+            <h3>  Concern over new greenhouse gas record          </h3>
+            <p> The  World Meteorological Organization (WMO ) has announced a new record for greenhouse gases in 2020 , exceeding the annual rate recorded in the average for the period 2011-2020. 
+
+                This has been communicated by the United Nations body in its annual report on greenhouse gases for the last 12 months. They claim that the amount of Co2 , the most important greenhouse gas, has reached an average of 413 parts per million in the atmosphere, with peaks of 420 .
+                It must be remembered that only five years ago they did not exceed 400. <a href="http://www.clima.com/noticias/preocupacion-por-el-nuevo-record-de-gases-de-efecto-invernadero">Clima.com </a>  </p>
+
+        </div>
+        <div class="contact-div">
+            <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+            <div class="contact-us">
+              <h4>Contact Us</h4>
+              <h3>123 Valparaiso Avenue</h3>
+              <h3>Cordoba Argentina</h3>
+              <h3>0800-222-1234</h3>
+              <h3>contact-us@whatwonderweather.com</h3>
+            </div>
+            
+            <a href="https://www.embedgooglemap.net/en/"></a>
+          </div>
         
     </main>
     <footer>
@@ -66,7 +135,7 @@
         <script src="/js/currentDate.js"></script>
 
     </footer>
-    <script src="/wdd230/lesson5/js/scripts.js"></script>
+    <script src="/lesson5/js/scripts.js"></script>
 
 </body>
 </html>
