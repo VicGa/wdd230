@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor D. Gauna">
+    <title>Preston Town Weather</title>
+    <link rel="shortcut icon" href="/wdd230/lesson5/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/wdd230/lesson5/css/normalize.css">
+    <link rel="stylesheet" href="/wdd230/lesson5/css/small.css">
+    <link rel="stylesheet" href="/wdd230/lesson5/css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="/wdd230/lesson5/images/whatwonderfulweather.png" alt="logo-image">
+
+        </picture>
+        <section>
+            <h1 >What Wonderful Weather</h1>
+            <h2>Start Your Day!!</h2>
+
+        </section>
+
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="/wdd230/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h2 class= "section_head">Preston Town </h2>
+        <div class="container">
+            <img class="banner" src="/wdd230/lesson5/images/568499 (1).jpg" alt="banner-img">
+            
+            <section class="weathersumary">
+                <h3>Weather Summary</h3>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+
+            </section>
+        </div>
+        <div class="contents">5 day forecast</div>
+        <div class="contents">Articles</div>
+        <div class="contents">Contact Information</div>
+        
+    </main>
+    <footer>
+        <p id="box-footer">&copy2021 | Victor Daniel Gauna | Argentina | <a href="https://www.byui.edu">BYUI Online Learning</a>  | Last Updated: <span id="currentDate"></span></p>
+        <script src="/js/currentDate.js"></script>
+
+    </footer>
+    <script src="/wdd230/lesson5/js/scripts.js"></script>
+
+</body>
+</html>
