@@ -132,9 +132,7 @@ h2{font-size: 1.5em;
 .container {
     width: 84%;
     margin: 0 0 0 8%;
-    border: 3px red dashed;
-
-    }
+}
 .weathersumary{
     margin:3% 0 0 6%;
     padding: 1rem;
@@ -147,9 +145,7 @@ h2{font-size: 1.5em;
 .banner{
     width: 100%;
 }
-.container figcaption{
-    text-align: center;
-}
+
 main .article-div a:hover{
     cursor: pointer;
     color: brown;
