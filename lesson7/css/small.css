@@ -1,0 +1,142 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    background-color: tomato;
+}
+
+/*-----------HEADER-------------*/
+
+header{
+    display: flex;
+    flex-flow: column;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+    background-color: #4895EF;
+    
+} 
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+}
+
+ 
+/*-----------END HEADER-------------*/
+
+
+/*-------------NAV---------------*/
+
+nav {
+    margin: 1em 0%;
+    background-color: #b5179e;
+    font-family: "Oswald", sans-serif;
+}
+nav button {
+    /* margin: .2rem 10%;*/
+     background-color: transparent;
+     border: none;
+     font-size: 1.6rem;
+     color: #fff;
+ }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0 ;
+    margin: 0 10%;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 20% 0.8rem 20%;
+    text-decoration: none;
+    color:rgba(255,255,255,.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+ 
+ 
+ 
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, 0.2) ;
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color:rgba(0, 0, 0, 0.4) ;
+}
+
+nav ul.hide{
+    display:none;
+}
+
+/*-------------NAV---------------*/
+
+/*-----------------MAIN----------------*/
+
+
+main{
+    padding: 0 2%;
+    min-height: 10rem;
+}
+figure{
+    display: flex;
+    flex-flow: column;
+    margin: 0 10% 0 10%;
+}
+figure img{
+    margin: 5% auto;
+    border: 5px solid red;
+    border-radius: 2em ;
+}
+
+/*---------END MAIN-------------*/
+
+/*---------------FOOTER---------*/
+
+footer {
+    color: #eee;
+    text-align: center;
+  background-color: #3c58d3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow:column;
+  padding: 5px 0 ;
+}
+footer{
+    height: auto;
+    margin: 0 0%;
+ }
+ a{
+    color: rgb(170, 9, 9);
+ }
+
+/*-------------END FOOTER---------*/
+
+
+/*-----------------Clearfix: force an element not to collapse-------*/
+.clearfix{
+    font-size: .9em;
+  letter-spacing: 1pt;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color:white;
+	font-weight: 100;
+}
+
+
+
+

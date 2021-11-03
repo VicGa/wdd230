@@ -1,5 +1,7 @@
 
+function toggleMenu() {document.getElementById("primaryNav").classList.toggle("hide");
 
+}
 const options = {year: 'numeric'};
 
 let modified = document.querySelector('#currentDate');
