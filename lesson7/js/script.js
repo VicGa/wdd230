@@ -1,14 +1,50 @@
+
+
+//--------------------FUNCTION TOGGLE MENU--------------------------
+
+
 function toggleMenu() {document.getElementById("primaryNav").classList.toggle("hide")};
 
-const options = {year: 'numeric'};
 
-let modified = document.querySelector('#currentDate');
+//-------------------END FUNCTION TOGGLE MENU--------------------
 
-let current_year = new Date().toLocaleDateString('en-US', options);
-let mod_date = document.lastModified;
+//------------------CURRENT DAY FUNCTION---------------------
 
-modified.innerHTML = "Last Modified: ${mod_date}";
-copyright.innerHTML = current_year;
+const dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Agugust",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+const todaysdate = new Date();
+const dayName =  dayNames[todaysdate.getDay()];
+const monthName = months[todaysdate.getMonth()];
+const currentdate = dayName  + ", " + todaysdate.getDate() + " " + monthName + ", " + todaysdate.getFullYear();
+
+
+document.getElementById('currentdate').textContent = currentdate;
+
+//--------------------END CURRENT DAY FUNCTION----------------
+
+
+//-----------------------LAZY LOAD FUNCTION---------------------
 
 
 const images = document.querySelectorAll("[data-src]");
@@ -34,6 +70,6 @@ images.forEach(image => {
     imgObserver.observe(image);
 });
 
-
+//-----------------------END LAZY LOAD FUNCTION------------------------------
 
 
