@@ -42,7 +42,7 @@ if ('IntersectionObserver' in window) {
 // loop through each img an check status and load if necesary
     imagesToLoad.forEach((img)=>{
         imgObserver.observe(img);
-    }):
+    });
 }
 else {
     imagesToLoad.forEach((img) => {
