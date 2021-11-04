@@ -1,9 +1,16 @@
 /* 64em only is also 1028px when basefont is 16px*/
 @media only screen and (min-width: 64em) {
+    /**------header section----**/
+    .header-picture{
+        display: flex;
+        flex-flow: row;
+    }
+    /**--------end header section**/
+
   
    /**--------nav section---------**/
     nav {
-        background-color: #b5179e;
+        background-color:#b5179e;
     }
     nav button {display: none;}
     
@@ -21,6 +28,17 @@
         padding: .6rem 1rem;
     }
     /**-------end nav section--------**/
+
+    /**------main section--------**/
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /**------end main section--------**/
+    
+
     .contact-div{
         display: flex;
         flex-flow:row;
