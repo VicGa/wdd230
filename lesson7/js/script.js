@@ -11,29 +11,45 @@ function toggleMenu() {document.getElementById("primaryNav").classList.toggle("h
 
 //-----------------------LAZY LOAD FUNCTION---------------------
 
+// get all imges with data-src attribute
 
-const images = document.querySelectorAll("[data-src]");
+const imagesToLoad = document.querySelectorAll("img[data-src]");
 
-function preloadImage(img) {
-    const src = img.getAttribute("data-src");
-    if (!src){ return;}
-    img.src = src;
-};
-
+// optional parameters being set for the Intersectional Observer
 const imgOptions = {
-    threshold: 0,
-    rootMargin:"0px 0px -500px 0px"
+    threshold: 0.5,
+    rootMargin: "0px 0px -200px 0px"
 };
 
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    entries.forEach(entry => {if (!entry.isIntersecting) { return;}
-                            else {preloadImage(entry.target);imgObserver.unobserve(entry.target);}})
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = ()=> {image.removeAttribute('data-src')};
 
-}, imgOptions);
+};
 
-images.forEach(image => {
-    imgObserver.observe(image);
-});
+// first check to see if Intersection Observer is supported
+
+if ('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver((items, observer) => {
+        items.forEach((item)=>{
+            if(item.isIntersecting){
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+
+        });
+    }, imgOptions);
+// loop through each img an check status and load if necesary
+    imagesToLoad.forEach((img)=>{
+        imgObserver.observe(img);
+    }):
+}
+else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+
+}
 
 //-----------------------END LAZY LOAD FUNCTION------------------------------
 
