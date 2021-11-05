@@ -32,7 +32,6 @@
     /**------main section--------**/
     main {
         height: auto;
-        margin: 0 10%;
     }
     main h1 {
         color: blue;
@@ -41,11 +40,12 @@
     main section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        
 
     }
     main section picture{
+        margin-right: 1em;
         background-color: blueviolet;
-        margin: 0 0 5em 0;
         width: 300px;
         height: 400px;
     }
