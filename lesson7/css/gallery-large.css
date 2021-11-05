@@ -5,6 +5,9 @@
         display: flex;
         flex-flow: row;
     }
+    header h1{
+        margin-top: 4rem;
+    }
     /**--------end header section**/
 
   
@@ -40,11 +43,12 @@
     main section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        
+        margin-left: 3%;
+
 
     }
     main section picture{
-        margin-right: 1em;
+        margin-right: 2em;
         background-color: blueviolet;
         width: 300px;
         height: 400px;
