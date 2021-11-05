@@ -30,11 +30,17 @@
     /**-------end nav section--------**/
 
     /**------main section--------**/
-    main {
+    main{
+
+        text-align: center;
+    } 
+    main section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    main h1{
+        color:blue;
+    }
 
     /**------end main section--------**/
     

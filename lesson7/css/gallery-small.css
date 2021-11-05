@@ -75,35 +75,13 @@ nav ul.hide{
 /*-------------NAV---------------*/
 
 /*-----------------MAIN----------------*/
-
-
 main{
-    padding: 0 2%;
-    min-height: 10rem;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-hr { margin: 0 8%;}
-
-main h1 {
+    margin: 0 10%;
     text-align: center;
-}
-main picture {
-    max-width: 300px;
-    max-height: 400px;
-    
-}
-main picture img {
-    width:100%;
-    box-shadow: 16px 16px 5px -3px rgba(0,0,0,0.36);
-    border-radius: 28px 33px 33px 33px;
-main picture img:hover{
-    transform: scale(1.1) skew(7deg) translate(75px,3px);
-}
-
-    
 
 }
+
+
 
 /*---------END MAIN-------------*/
 
