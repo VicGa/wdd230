@@ -1,0 +1,67 @@
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+    --row1:#e7f0ed;
+    --row2:#e7ffed;
+    --data: #628ca6;
+    --data2:#7fb9c2;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+    font-family: "Ubuntu", sans-serif;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr:first-child th {
+	background-color:var(--data2);
+	color: black;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--data);
+    color:white;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(1) {
+	background-color: var(--row1);
+}
+tbody tr:nth-child(2) {
+	background-color: var(--row2);
+}
+tbody tr:nth-child(3) {
+	background-color: var(--row1);
+}
+tbody tr:nth-child(4) {
+	background-color: var(--row2);
+}
+tbody tr:nth-child(5) {
+	background-color: var(--row1);
+}
+tbody tr:nth-child(6) {
+	background-color: var(--row2);
+}
+tfoot{
+    background-color: var(--data2);
+}
