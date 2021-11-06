@@ -56,6 +56,9 @@ tbody tr:nth-child(3) {
 tbody tr:nth-child(4) {
 	background-color: var(--row2);
 }
+tbody tr:nth-last-child(4){
+    background-color: var(--data);
+}
 tbody tr:nth-child(5) {
 	background-color: var(--row1);
 }
