@@ -108,7 +108,7 @@ nav ul li a:hover{
     background-color:rgba(0, 0, 0, 0.4) ;
 }
 nav ul.hide{
-    display: block;
+    display: none;
 }
 
 /*-------------NAV---------------*/
