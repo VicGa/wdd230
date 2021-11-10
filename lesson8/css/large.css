@@ -16,8 +16,8 @@
         border-right: 1px solid rgba(0, 0, 0,.3);
         padding: .6rem 1rem;
     }
-    nav ul.hide{
-        display: none;
+    #primaryNav{
+        display: block;
     }
     .contact-div{
         display: flex;
