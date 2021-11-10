@@ -1,0 +1,231 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+a{
+    font-weight: bold;
+}
+#announce {
+    display: block;
+    background-color: #5cdb95;
+    color: #05386B;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+/*-----------HEADER-------------*/
+picture{
+    display: flex;
+    flex-flow: row;
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+    background-color: #4895EF;
+    
+} 
+header picture img {
+    margin: 0 0 0 15% ;
+    width:20%;
+    
+}
+section h1,h2{
+    display: flex;
+    flex-flow: column;
+}
+h1{
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color:#F72585 ;
+}
+
+h2{
+    flex-flow: column;
+    font-size: 1.5em;
+    font-family: "Oswald", sans-serif;
+    color:#B5179E ;
+
+}
+
+/*header img {
+    margin: auto;
+    height: 150px;
+    width: auto;
+   
+}*/
+header img {
+    float: center;
+    width: 75%;
+    height: 75%;
+    
+  }
+  
+
+
+ 
+/*-----------END HEADER-------------*/
+
+
+/*-------------NAV---------------*/
+
+nav {
+    margin: 1em 10%;
+    background-color: #b5179e;
+    font-family: "Oswald", sans-serif;
+}
+nav button {
+    /* margin: .2rem 10%;*/
+     background-color: transparent;
+     border: none;
+     font-size: 1.6rem;
+     color: #fff;
+ }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0 ;
+    margin: 0 10%;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 20% 0.8rem 20%;
+    text-decoration: none;
+    color:rgba(255,255,255,.8);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+ 
+ 
+ 
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, 0.2) ;
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color:rgba(0, 0, 0, 0.4) ;
+}
+nav ul.hide{
+    display: none;
+}
+
+/*-------------NAV---------------*/
+
+/*-----------------MAIN----------------*/
+
+
+main{
+    padding: 0 10%;
+    min-height: 10rem;
+}
+form{
+    margin: 3em auto;
+}
+fieldset{
+    background-image:url(/lesson8/images/twister-1.jpg);
+    border-radius: 0.5em;
+    color:cyan;
+}
+fieldset h3{
+    background-color:mediumvioletred;
+    border-radius: 0.2em;
+    color: whitesmoke;
+    font-family:sans-serif;
+    text-align: center;
+
+}
+input:hover{
+    color: whitesmoke;
+    border: 5px solid violet;
+}
+.personalInfo input{
+    color: whitesmoke;
+    max-width: 12em;
+    margin-bottom: 0.2em;
+    font-family:monospace;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: 3px solid red;
+}
+
+.storm-info input{
+    color: whitesmoke;
+    max-width: 8em;
+    margin-bottom: 0.2em;
+    font-family:monospace;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: 3px solid red;
+}
+.submit_button{
+    margin-top: 0.5em;
+    background-color:mediumvioletred;
+    color: whitesmoke;
+    border-radius: 0.3em;
+}
+.submit_button:hover{
+    cursor: pointer;
+}
+
+textarea{
+    width: 15em;
+    height: 4em;
+    border-radius: 1em;
+}
+textarea:hover{
+    color: whitesmoke;
+    background-color: transparent;
+    
+
+}
+
+/*---------END MAIN-------------*/
+
+/*---------------FOOTER---------*/
+
+footer {
+    text-align: center;
+  background-color: #4361ee;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow:column;
+  padding: 5px 0 ;
+}
+footer{
+    height: auto;
+    margin: 0 10%;
+ }
+
+/*-------------END FOOTER---------*/
+
+
+/*-----------------Clearfix: force an element not to collapse-------*/
+.clearfix{
+    font-size: .9em;
+  letter-spacing: 1pt;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color:white;
+	font-weight: 100;
+}
+
+
+
+
