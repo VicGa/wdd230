@@ -91,7 +91,7 @@ nav ul {
 }
 
 nav ul li a {
-    display: flex;
+    display: block;
     padding: 0.8rem 20% 0.8rem 20%;
     text-decoration: none;
     color:rgba(255,255,255,.8);
