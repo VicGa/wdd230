@@ -1,7 +1,7 @@
 
 body{
-    
-    margin: 1em 10em 1em 10em;background-color: crimson;
+    margin: 3em;
+    background-color: crimson;
 
 }
 /*---------------HEADER STYLE----------------*/
@@ -52,6 +52,10 @@ footer{
 }
 /*-----------END FOOTER STYLE--------*/
 @media only screen and (min-width: 32.5em){
+    body{
+    margin: 1em 10em 1em 10em;
+
+    }
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr ;
