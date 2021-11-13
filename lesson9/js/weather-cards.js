@@ -32,7 +32,7 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
-            if (towns[i].name == "Preston" || towns[i].name == "Soda Spring" || towns[i].name == 'fush Haven'){
+            if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == 'Fish Haven'){
                 //****CREATE VARIABLE******* */
 
             let card = document.createElement('div');
