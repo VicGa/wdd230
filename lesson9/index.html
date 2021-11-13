@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/wdd230/lesson6/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/wdd230/lesson9/css/weatherStyle.css">
+
+    <title>What Wonderful Weather</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="/wdd230/lesson6/images/whatwonderfulweather.png" alt="logo-image" >
+            <section>
+                <h1 >What Wonderful Weather</h1>
+                <h2>Start Your Day!!</h2>
+            </section>      
+            
+        </picture>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="/wdd230/lesson6/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Welcome to "What Wonderful Weather"!!!</h1>
+            <p>The Place where you can touch the sky!!!</p>
+            <img class="banner" loading="lazy"  srcset="/wdd230/lesson6/images/image-big.jpeg 1x,/wdd230/lesson6/images/image-medium.jpg, /wdd230/lesson6/images/image-small.jpg 3x" src="/wdd230/lesson6/images/image-big.jpeg 0x" alt="banner-img">
+
+        </div>
+        <div class="cards"></div>
+        <div class="wireframe"><a href="#">Wireframes</a></div>
+
+
+    </main>
+    <footer>
+        <p id="box-footer">&copy2021 | Victor Daniel Gauna | Argentina | <a href="https://www.byui.edu">BYUI Online Learning</a>  | Last Updated: <span id="currentDate"></span></p>
+
+    </footer>
+    <script src="/wdd230/lesson9/js/weather-cards.js"></script>
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
+    <script> WebFont.load({google: {families: ["Lato"]}});</script>
+</body>
+</html>
