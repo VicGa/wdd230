@@ -35,7 +35,7 @@ fetch(requestURL)
             if (towns[i].name == "Preston" || towns[i].name == "Soda Spring" || towns[i].name == 'fush Haven'){
                 //****CREATE VARIABLE******* */
 
-            let card = document.createElement('section');
+            let card = document.createElement('div');
             let name = document.createElement('h2');
             let motto = document.createElement('h4');
             let yearFunded = document.createElement('p');
