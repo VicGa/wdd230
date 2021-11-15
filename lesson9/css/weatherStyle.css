@@ -197,22 +197,7 @@ footer{
         flex-flow:row;
     }
 
-    main article {
-        display: grid;
-          grid-template-columns: 1fr 1fr;
-      }
-      
-    main article:nth-child(odd) img {
-          grid-column: 2;
-      }
-      
-    main article:nth-child(odd) .data {
-          grid-column: 1;
-          grid-row: 1;
-      }
-      
-    main article img {width: 100%; height: auto;padding:0;}
-    main article p {padding: .75rem;}
+    
 
 
 /*-------------END MEDIUM SCREEN------*/
