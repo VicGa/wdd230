@@ -196,11 +196,30 @@ footer{
         display: flex;
         flex-flow:row;
     }
-
+    
+    .cards article{
+        display: flex;
+        flex-direction: row;
+    }
+    .cards article img{
+        margin-top: 00.75rem;
+    }
     
 
 
 /*-------------END MEDIUM SCREEN------*/
+/*-------------START BIG SCREEN------*/
+@media only screen and (min-width: 64em){
+    .cards article{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/*-------------END BIG SCREEN------*/
+
 
 
 /*-----------------Clearfix: force an element not to collapse-------*/
