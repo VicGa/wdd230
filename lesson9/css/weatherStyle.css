@@ -198,6 +198,7 @@ footer{
     }
     
     .cards article{
+        width: auto;
         display: flex;
         flex-direction: row;
     }
@@ -211,6 +212,7 @@ footer{
 /*-------------START BIG SCREEN------*/
 @media only screen and (min-width: 64em){
     .cards article{
+        width: 250px;
         display: flex;
         flex-direction: column;
     }
