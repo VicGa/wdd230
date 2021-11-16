@@ -141,6 +141,31 @@ main article img{
     border-radius: 1rem;
     
 }
+
+.contact-div {
+    display: flex;
+    flex-flow:column;
+    margin: 2rem 8% 2rem 8%;
+    height: auto;
+    padding: 1rem ;
+    border-radius: 1rem;
+    text-align: left;
+    color: #eee;
+    background-color: #b5179e;
+}
+#map {
+   max-width: 15em;
+   max-height: 25em;
+    margin: auto 5%;
+    float: left;
+  }
+.contact-us {
+    grid-column: 2;
+    margin: 0 0 0 8%;
+  }
+.contact-us h4 {
+    text-align: center;
+}
 /**********************END MAIN******************/
 /**********************START FOOTER******************/
 
@@ -201,29 +226,13 @@ footer{
     .cards article img{
         margin-top: 00.75rem;
     }
-    .contact-div {
+    .contact-div{
         display: flex;
-        flex-flow:column;
-        margin: 2rem 8% 2rem 8%;
-        height: auto;
-        padding: 1rem ;
-        border-radius: 1rem;
-        text-align: left;
-        color: #eee;
-        background-color: #b5179e;
+        flex-flow:row;
     }
     #map {
-       max-width: 15em;
-       max-height: 25em;
-        margin: auto 5%;
-        float: left;
-      }
-    .contact-us {
-        grid-column: 2;
-        margin: 0 0 0 8%;
-      }
-    .contact-us h4 {
-        text-align: center;
+        min-width: 20em;
+        min-height: 25em;
     }
 
 
@@ -235,14 +244,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .contact-div{
-        display: flex;
-        flex-flow:row;
-    }
-    #map {
-        min-width: 20em;
-        min-height: 25em;
-    }
+    
 }
 
 
