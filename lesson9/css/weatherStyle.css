@@ -141,6 +141,15 @@ main article img{
     border-radius: 1rem;
     
 }
+.wireframes{
+    display:flex;
+    flex-direction:column;
+  }
+  .wireframes img{
+    max-width:620px;
+    margin-top:1em;
+  
+  }
 
 .contact-div {
     display: flex;
