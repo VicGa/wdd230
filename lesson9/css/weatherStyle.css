@@ -192,10 +192,6 @@ footer{
         border-right: 1px solid rgba(0, 0, 0,.3);
         padding: .6rem 1rem;
     }
-    .contact-div{
-        display: flex;
-        flex-flow:row;
-    }
     
     .cards article{
         width: auto;
@@ -205,7 +201,30 @@ footer{
     .cards article img{
         margin-top: 00.75rem;
     }
-    
+    .contact-div {
+        display: flex;
+        flex-flow:column;
+        margin: 2rem 8% 2rem 8%;
+        height: auto;
+        padding: 1rem ;
+        border-radius: 1rem;
+        text-align: left;
+        color: #eee;
+        background-color: #b5179e;
+    }
+    #map {
+       max-width: 15em;
+       max-height: 25em;
+        margin: auto 5%;
+        float: left;
+      }
+    .contact-us {
+        grid-column: 2;
+        margin: 0 0 0 8%;
+      }
+    .contact-us h4 {
+        text-align: center;
+    }
 
 
 /*-------------END MEDIUM SCREEN------*/
@@ -215,6 +234,14 @@ footer{
         width: 250px;
         display: flex;
         flex-direction: column;
+    }
+    .contact-div{
+        display: flex;
+        flex-flow:row;
+    }
+    #map {
+        min-width: 20em;
+        min-height: 25em;
     }
 }
 
