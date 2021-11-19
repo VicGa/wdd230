@@ -1,6 +1,6 @@
 //**************CREATE A VARIABLE 'API-URL'******/
 
-const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133'
+const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133';
 
 fetch(apiURL)
   .then((response) =>response.json())
